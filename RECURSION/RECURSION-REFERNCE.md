@@ -203,7 +203,7 @@ combo(0,target,arr,[],[])
 ```
 ---
 
-# 15. PRINT ALL PERMUTATIONS OF A LIST
+## 15. PRINT ALL PERMUTATIONS OF A LIST
 ```python
 def conv(list):
 	return ''.join(list)
