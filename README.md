@@ -1,5 +1,5 @@
 # PRACTICE
 ---
-##GRAPHS
-##RECURSION
+## GRAPHS
+## RECURSION
 ---
