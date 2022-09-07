@@ -93,3 +93,13 @@ def levelorder(root):
             return True
 ```
 ---
+## Count of nodes
+```python
+def countofnodes(root):
+    if root is None:
+        return 0
+    leftnodes = countofnodes(root.left)
+    rigthnodes= countofnodes(root.right)
+    return 1+leftnodes+rigthnodes
+```
+---
