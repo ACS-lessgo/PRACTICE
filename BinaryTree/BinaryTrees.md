@@ -1,7 +1,24 @@
 # BINARY TREE
 
+- Binary Tree is defined as a Tree data structure with at most 2 children. 
+- Since each element in a binary tree can have only 2 children
+- we typically name them the left and right child.
+
+---
+
 ## Binary Tree structure
+
+- Data
+- Pointer to left child
+- Pointer to right child
+
 ![BinaryTree](https://cdn.programiz.com/sites/tutorial2program/files/binary-tree-representation_0.png)
+
+---
+## Advantages and Disadvantages of Binary Trees
+
+- They can be used to reflect relationships between data.
+- They can store an arbitrary number of data values.
 
 ---
 ## Create Node
