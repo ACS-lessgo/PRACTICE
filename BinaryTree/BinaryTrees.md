@@ -141,3 +141,13 @@ def heightoftree(root):
     return 1+height
 ```
 ---
+## Diameter of a Tree
+```python
+def diameter(root):
+    if root is None:
+        return 0
+    dia1=diameter(root.left)
+    dia2=diameter(root.right)
+    dia3=heightoftree(root.left)+heightoftree(root.right)
+    return max(dia3,max(dia2,dia1))
+```
