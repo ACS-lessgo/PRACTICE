@@ -60,6 +60,22 @@ def postorder(self):
         print(self.value,end="->")
 ```
 ---
+- Levelorder
+```python
+def levelorder(root):
+            traversed = []
+            traversed.append(root)
+            if root is None:
+                return traversed
+            while traversed != []:
+                print(traversed[0].value,"->",end=" ")
+                x = traversed.pop(0) 
+                if x.left:
+                    traversed.append(x.left)
+                if x.right:
+                    traversed.append(x.right)
+```
+---
 ## Finding an Element in a Tree
 ```python
     def find(self,value):
