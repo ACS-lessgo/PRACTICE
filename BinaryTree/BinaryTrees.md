@@ -130,3 +130,14 @@ def sumofnodes(root):
     return root.value+leftsum+rightsum
 ```
 ---
+## Height of a Tree
+```python
+def heightoftree(root):
+    if root is None:
+        return 0
+    left_h=heightoftree(root.left)
+    right_h=heightoftree(root.right)
+    height=max(left_h,right_h)
+    return 1+height
+```
+---
