@@ -120,3 +120,13 @@ def countofnodes(root):
     return 1+leftnodes+rigthnodes
 ```
 ---
+## Sum of nodes
+```python
+def sumofnodes(root):
+    if root is None:
+        return 0
+    leftsum=sumofnodes(root.left)
+    roghtsum=sumofnodes(root.right)
+    return root.value+leftsum+rightsum
+```
+---
