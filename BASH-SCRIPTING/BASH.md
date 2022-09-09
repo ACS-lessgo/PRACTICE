@@ -64,9 +64,9 @@ else
 fi
 '
 ```
-## AND OPERATOR (-a or &&)
+- AND OPERATOR (-a or &&)
 
-## OR OPERATOR  (-o or ||)
+- OR OPERATOR  (-o or ||)
 
 ```bash
 age=32
