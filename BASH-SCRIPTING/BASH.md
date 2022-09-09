@@ -177,7 +177,7 @@ arge=("$@")
 ```    
 - Giving out array
 ```bash 
-echo ${@         
+echo ${@}       
 ```
 - length of the array
 ```bash 
