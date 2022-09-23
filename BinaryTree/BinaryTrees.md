@@ -151,3 +151,33 @@ def diameter(root):
     dia3=heightoftree(root.left)+heightoftree(root.right)
     return max(dia3,max(dia2,dia1))
 ```
+---
+## Mirrot a Tree
+```python
+class Tree:
+	def __init__(self,val):
+		self.val=val
+		self.right=None
+		self.left=None
+
+def inorder(root):
+	if root.left:
+		inorder(root.left)
+	print(root.val,end=" ")
+	if root.right:
+		inorder(root.right)
+		
+def mirror(root):
+	if root is None:
+		return
+	else:
+		temp=root
+		
+		mirror(root.left)
+		mirror(root.right)
+		
+		temp=root.left
+		root.left=root.right
+		root.right=temp
+```
+---
