@@ -152,7 +152,7 @@ def diameter(root):
     return max(dia3,max(dia2,dia1))
 ```
 ---
-## Mirrot a Tree
+## Mirror of a Tree
 ```python
 class Tree:
 	def __init__(self,val):
@@ -179,5 +179,23 @@ def mirror(root):
 		temp=root.left
 		root.left=root.right
 		root.right=temp
+```
+---
+## Largest node in a Tree
+```python
+def largest_node(root):
+	
+	if root is None:
+		print("empty")
+		return
+	else:
+		maxi=root.val
+		if root.right:
+			rightmax=largest_node(root.right)
+			maxi=max(rightmax,maxi)
+		if root.left:
+			leftmax=largest_node(root.left)
+			maxi=max(leftmax,maxi)
+		return maxi
 ```
 ---
