@@ -199,3 +199,18 @@ def largest_node(root):
 		return maxi
 ```
 ---
+## Smallest node in a Tree
+```python
+def mini_node(root):
+	if root is None:
+		return
+	else:
+		mini=root.val
+		if root.right:
+			rightmin=mini_node(root.right)
+			mini=min(rightmin,mini)
+		if root.left:
+			leftmin=mini_node(root.left)
+			mini=min(leftmin,mini)
+		return mini
+```
