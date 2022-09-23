@@ -214,3 +214,38 @@ def mini_node(root):
 			mini=min(leftmin,mini)
 		return mini
 ```
+---
+## Delete a Node
+```python
+def deepdelete(root,k):
+	if root==None:
+		return None
+	if root.right and root.left is None:
+		if root.val==k:
+			return None
+		else:
+			return root
+	key=None
+	temp=None
+	last=None
+	q=[]
+	q.append(root)
+	while q:
+		temp=q.pop(0)
+		if temp.val==k:
+			key=temp
+		if temp.left:
+			last=temp
+			q.append(temp.left)
+		if temp.right:
+			last=temp
+			q.append(temp.right)
+		if key!=None:
+			key.val=temp.val
+			if last.right==temp:
+				last.right=None
+			else:
+				last.left=None
+	return root
+```
+---
