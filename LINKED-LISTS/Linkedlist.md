@@ -177,3 +177,15 @@ def sorting(head,jk):
 				cur2=cur2.next
 			cur1=cur1.next
 ```
+---
+## Middle element
+```python
+def find_mid(head):
+	slow=head
+	fast=head
+	while fast and fast.next:
+		slow=slow.next
+		fast=fast.next.next
+	print("the middle element is",slow.val)
+```
+---
