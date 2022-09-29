@@ -165,7 +165,7 @@ def zipper_lists(head_1, head_2):
 ```python
 def sorting(head,jk):
 	cur1=head
-	cur2=jk
+	cur2=Node(None)
 	if head is None:
 		return
 	else:
