@@ -189,3 +189,18 @@ def find_mid(head):
 	print("the middle element is",slow.val)
 ```
 ---
+## Cycle in a Linked List
+```python
+def cycle(head):
+	slow=head
+	fast=head
+	while slow and  fast and fast.next:
+		slow=slow.next
+		fast=fast.next.next
+		if slow==fast:
+			print("cycle",slow.val)
+			return 1
+	print("no cycle")
+	return 0
+```
+---
