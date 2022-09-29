@@ -160,3 +160,20 @@ def zipper_lists(head_1, head_2):
     tail.next=current2
   return head_1
 ```
+## Sorting a Linked List
+
+```python
+def sorting(head,jk):
+	cur1=head
+	cur2=jk
+	if head is None:
+		return
+	else:
+		while cur1 is not None:
+			cur2=cur1.next
+			while cur2 is not None:
+				if cur1.val>cur2.val:
+					cur1.val,cur2.val=cur2.val,cur1.val
+				cur2=cur2.next
+			cur1=cur1.next
+```
